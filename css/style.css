@@ -26,10 +26,10 @@ html{
 .logo{
   width: auto;
   height: 88px;
-  animation: scaleUp 3s;
+  animation: logoScaleUp 3s;
 }
 
-@keyframes scaleUp {
+@keyframes logoScaleUp {
   0% { scale: 0.1; }
 }
 
@@ -169,15 +169,78 @@ html{
   top: 0;
 }
 
-.asideArt:hover{
-  position: relative;
-  transition: 1s;
-  scale: 1.1;
+.asideArtA{
+  margin: 0 0 0 0 ;
+  width: 50%;
+  height: 50%;
+  top: 0;
+}
+
+.asideArtB{
+  margin: 0 0 0 0 ;
+  width: 50%;
+  height: 50%;
+  top: 0;
+}
+
+.asideArtA.scaleUp{
+  animation: scaleUp 0.5s;
+  animation-timing-function: ease ;
+  animation-fill-mode:forwards;
+}
+
+.asideArtA.scaleDown{
+  animation: scaleDown 0.5s;
+  animation-timing-function: ease ;
+  animation-fill-mode:forwards;
+
+}.asideArtB.scaleUp{
+  animation: scaleUp 0.5s;
+  animation-timing-function: ease ;
+  animation-fill-mode:forwards;
+}
+
+.asideArtB.scaleDown{
+  animation: scaleDown 0.5s;
+  animation-timing-function: ease ;
+  animation-fill-mode:forwards;
+}
+
+@keyframes scaleUp {
+  from { scale: 1; }
+  to { scale: 1.1; }
+}
+
+@keyframes scaleDown {
+  from { scale: 1.1; }
+  to { scale: 1; }
 }
 
 
-
 .asideTextArea{
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 640px;
+  color:#e8e8e8;
+  font-family:Arial Black;
+  margin: 0 auto 0 auto;
+  animation: moveright 3s;
+}
+.asideTextAreaA{
+  z-index: -1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 640px;
+  color:#e8e8e8;
+  font-family:Arial Black;
+  margin: 0 auto 0 auto;
+  animation: moveright 3s;
+}
+
+.asideTextAreaB{
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -219,6 +282,7 @@ html{
   flex-direction: row;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+
 }
 
 .footerIconList{
