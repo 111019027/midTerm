@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">  
     <script src="js/jQuery 3.6.1.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
-    <title>Gang Start : 異世界極道傳說ㅣ官方網站</title>
+    <title>Gang Start : 異世界極道傳說ㅣ官方網站-登入介面</title>
 </head>
 
 <body onselectstart="return false" oncontextmenu="return false"> <!-- onmousedown="return false"--> 
@@ -25,21 +25,34 @@
                
             </button>
             <div class="panel">
-                <a href="index.html" class="pages">Intro</a>
-                <a href="introduction.html" class="pages">About</a>
+
+                   <a href="index.html" class="pages">Index</a>
+                   <a href="introduction.html" class="pages">About</a>
 
                 </div>
         </header>
     </div>
 
     <!--main-->
+    <div class="logblackbar"></div>
         <div class="logcontainer">
             <header class="logheader">
-                <h1 class="logheader-title">Log In To Your Account</h1>
+                <h1 class="logheader-title">Sign In or Sign Up?</h1><br>
             </header>
 
             <div class="logblock">
-                
+                               <!-- Overlay -->
+			<div class="container__overlay">
+				<div class="overlay">
+					<div class="overlay__panel overlay--down">
+						<button class="button-display" id="signIn">登 錄</button>
+					</div>
+					<div class="overlay__panel overlay--up">
+						<button class="button-display" id="signUp">注 冊</button>
+					</div>
+				</div>
+			</div>
+ 
                 <!-- Sign Up -->
                 <div style="width:320px;float: right;margin:0 auto;" ></div>
                     <div class="container__form container--signup">
@@ -63,7 +76,6 @@
                             <button class="btn">登 錄</button>
                         </form>
                     </div>
-                
 
             
             </div>
@@ -83,6 +95,7 @@
                 
             <a href="#top"><button type="button" class="goTopBtn">TOP</button></a>
                     <script src="js/script.js"></script>
-        
+                    
+                           
 </body>
 </html>
