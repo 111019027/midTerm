@@ -26,10 +26,10 @@ html{
 .logo{
   width: auto;
   height: 88px;
-  animation: logoScaleUp 3s;
+  animation: scaleUp 3s;
 }
 
-@keyframes logoScaleUp {
+@keyframes scaleUp {
   0% { scale: 0.1; }
 }
 
@@ -79,8 +79,15 @@ html{
 }
 
 .pages{
-padding-left: 20px;
-background-color:#eff3cb ;
+  padding-left: 20px;
+  background-color:#eff3cb ;
+  font-family:Arial Black;
+  cursor: pointer;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .pages:hover{
@@ -155,67 +162,22 @@ background-color:#eff3cb ;
   justify-content: center;
 
 }
-.asideArtA{
+.asideArt{
   margin: 0 0 0 0 ;
   width: 50%;
   height: 50%;
   top: 0;
 }
 
-.asideArtB{
-  margin: 0 0 0 0 ;
-  width: 50%;
-  height: 50%;
-  top: 0;
-}
-
-.asideArtA.scaleUp{
-  animation: scaleUp 0.5s;
-  animation-timing-function: ease ;
-  animation-fill-mode:forwards;
-}
-
-.asideArtA.scaleDown{
-  animation: scaleDown 0.5s;
-  animation-timing-function: ease ;
-  animation-fill-mode:forwards;
-
-}.asideArtB.scaleUp{
-  animation: scaleUp 0.5s;
-  animation-timing-function: ease ;
-  animation-fill-mode:forwards;
-}
-
-.asideArtB.scaleDown{
-  animation: scaleDown 0.5s;
-  animation-timing-function: ease ;
-  animation-fill-mode:forwards;
-}
-
-@keyframes scaleUp {
-  from { scale: 1; }
-  to { scale: 1.1; }
-}
-
-@keyframes scaleDown {
-  from { scale: 1.1; }
-  to { scale: 1; }
+.asideArt:hover{
+  position: relative;
+  transition: 1s;
+  scale: 1.1;
 }
 
 
-.asideTextAreaA{
-  z-index: -1;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  max-width: 640px;
-  color:#e8e8e8;
-  font-family:Arial Black;
-  margin: 0 auto 0 auto;
-  animation: moveright 3s;
-}
 
-.asideTextAreaB{
+.asideTextArea{
   z-index: -1;
   display: flex;
   justify-content: center;
@@ -245,6 +207,7 @@ background-color:#eff3cb ;
 
 /*footerStart*/
 .footer{
+  position:relative;
   margin: 64px auto 0 auto;
   height: 64px;
   background-color:#eff3cb;
@@ -256,7 +219,6 @@ background-color:#eff3cb ;
   flex-direction: row;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-
 }
 
 .footerIconList{
@@ -333,3 +295,98 @@ background-color:#eff3cb ;
 ::-webkit-scrollbar {
   display: none;
 }
+    /*gameprodce*/
+
+  .Img-list{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+    /*introductionimg*/
+  .smallArt{
+    margin: 0 0 0 0 ;
+    width: 12%;
+    height: 12%;
+  }
+  /*login*/
+  .forget-main-content{
+    min-height: 75%;
+
+  }
+ .logblackbar{
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+ }
+  .logcontainer{
+    display:flex;
+    max-width: 940px;
+    height: 68%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #eff3cb;
+    flex-direction: column;
+}
+
+.logheader{
+    padding-top: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+.logheader-title{
+  line-height: 36px;
+  font-weight:1000;
+  font-family:Arial Black;
+  font-size:44px; 
+  font-weight: bold;
+  color:#778a50;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 26%;
+  justify-content: center;
+}
+.rectangle{
+  line-height:1px;
+  position: relative;
+width: 320px;
+height: 30px;
+left: 310px;
+background-color: rgb(255, 255, 255);
+justify-content: center;
+}
+
+.logblock{
+  justify-content: center;
+}
+.container__overlay{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 46%;
+}
+.form {
+  padding-top: 5px;
+  padding-bottom: 50px;
+  height: 160px;
+  padding-left: 40%;
+}
+.button-display{
+  margin-bottom: auto;
+  margin-top: auto;
+  padding-left: 10px;
+  font-weight: bold;
+  list-style: none;
+}
+html,body{  
+  height: 100%;
+}
+
+.form{
+  display:none;
+  background-color: #778a50;
+  justify-content: center;
+}
+a:link    {color:black;}
+a:visited {color:black;}
+a{text-decoration:none}
+a:hover{text-decoration:none}
