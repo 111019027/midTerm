@@ -1,3 +1,4 @@
+
 $(".dropMenuBtn").click(function(){
     $(".panel").slideToggle();
 });
@@ -13,39 +14,27 @@ $(document).scroll(function () {
 
 $(document).scroll(function () {
     let y = $(this).scrollTop();
-    if (y > 250 ) {
-        $('.asideArtA').fadeIn();
-        $('.asideArtB').fadeIn();
+    if (y > 200 ) {
+        $('.asideArt').fadeIn();
     } else {
-        $('.asideArtA').fadeOut();
-        $('.asideArtB').fadeOut();
+        $('.asideArt').fadeOut();
     }
 
     if (y > 250) {
-        $('.asideTextAreaA').fadeIn();
+        $('.asideTextArea').fadeIn();
     } else {
-        $('.asideTextAreaA').fadeOut();
-    }
-
-    if (y > 350) {
-        $('.asideTextAreaB').fadeIn();
-    } else {
-        $('.asideTextAreaB').fadeOut();
+        $('.asideTextArea').fadeOut();
     }
 });
 
-$(".asideArtA").mouseenter(function(){
-    $(".asideArtA").toggleClass('scaleUp');
-})
-
-$(".asideArtA").mouseout(function(){
-    $(".asideArtA").toggleClass('scaleDown');
-})
-
-$(".asideArtB").mouseenter(function(){
-    $(".asideArtB").toggleClass('scaleUp');
-})
-
-$(".asideArtB").mouseout(function(){
-    $(".asideArtB").toggleClass('scaleDown');
-})
+$(".asideArt").click(function(){
+    $(".asideArt").css('red');
+});
+$("#signIn").click(function(){
+    $("#form2").css('display','block');
+    $("#form1").css('display','none');
+});
+$("#signUp").click(function(){
+    $("#form1").css('display','block');
+    $("#form2").css('display','none');
+});
