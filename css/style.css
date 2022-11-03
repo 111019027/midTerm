@@ -183,6 +183,12 @@ html{
   top: 0;
 }
 
+.asideArt:hover{
+  position: relative;
+  transition: 1s;
+  scale: 1.1;
+}
+
 .asideArtA.scaleUp{
   animation: scaleUp 0.5s;
   animation-timing-function: ease ;
@@ -194,7 +200,9 @@ html{
   animation-timing-function: ease ;
   animation-fill-mode:forwards;
 
-}.asideArtB.scaleUp{
+}
+
+.asideArtB.scaleUp{
   animation: scaleUp 0.5s;
   animation-timing-function: ease ;
   animation-fill-mode:forwards;
