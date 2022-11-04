@@ -401,6 +401,9 @@ html{
     flex-direction: column;
 }
 
+.wrapper {
+  flex-grow: 1;
+}
 .logheader{
     padding-top: 3px;
     display: flex;
@@ -451,6 +454,7 @@ justify-content: center;
 }
 html,body{  
   height: 100%;
+  margin: 0;
 }
 
 .form{
